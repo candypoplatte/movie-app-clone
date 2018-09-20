@@ -11,8 +11,8 @@ const movieTitles = [
 
 const movieImages = [
   "https://images-na.ssl-images-amazon.com/images/I/41a37t9BwTL.jpg",
-  "https://images-na.ssl-images-amazon.com/images/I/51KtPqh3nkL.jpg",
-  "https://www.posterduniya.com/wp-content/uploads/2016/10/The-Dark-Knight-Batman-Movie-Official-Poster2.jpg",
+  "https://i.ebayimg.com/00/s/NTAwWDMzOA==/z/7WQAAMXQ74JTWIJr/$_35.JPG?set_id=2",
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk8Q7FkVG4FCT-fsxJwTLYImZc4bUGrvMmDgKFpNBbhUm-oesU",
   "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/2/25/Iron_Man_poster_3.png/revision/latest?cb=20120420114513"
 ]
 
