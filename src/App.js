@@ -26,6 +26,18 @@ class App extends Component {
   // Render: componentWillMount() -> render() -> componentDidMount()
   // Update: componentWillRecieveProps() -> shouldComponentUpdate() == true -> render() -> componentWillUpdate() -> componentDidUpdate()
 
+  state = {
+    greeting: "hello"
+  }
+
+  componentDidMount() {
+    setTimeout(() => { 
+      this.setState({
+        greeting: "hello again"
+      })
+    }, 5000)
+  }
+
   render() {
     console.log('render')
     return (
