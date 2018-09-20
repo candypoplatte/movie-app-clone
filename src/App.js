@@ -24,15 +24,6 @@ const movies = [
 class App extends Component {
 
   // Render: componentWillMount() -> render() -> componentDidMount()
-
-  componentWillMount() {
-    console.log('will mount')
-  }
-
-  componentDidMount() {
-    console.log('did mount')
-  }
-
   // Update: componentWillRecieveProps() -> shouldComponentUpdate() == true -> render() -> componentWillUpdate() -> componentDidUpdate()
 
   render() {
