@@ -33,6 +33,8 @@ class App extends Component {
     console.log('did mount')
   }
 
+  // Update: componentWillRecieveProps() -> shouldComponentUpdate() == true -> render() -> componentWillUpdate() -> componentDidUpdate()
+
   render() {
     console.log('render')
     return (
