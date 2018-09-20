@@ -7,6 +7,7 @@ class Movie extends Component {
     title: PropTypes.string,
     poster: PropTypes.string
   }
+
   render() {
     return (
       <div>
@@ -18,6 +19,10 @@ class Movie extends Component {
 }
 
 class MoviePoster extends Component {
+  static propTypes = {
+    poster: PropTypes.string
+  }
+
   render() {
     return (
       <img src={this.props.poster} />
