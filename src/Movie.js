@@ -4,7 +4,10 @@ import './Movie.css';
 class Movie extends Component {
   render() {
     return (
-      <h1>This is 'Movie' component.</h1>
+      <div>
+        <MoviePoster />
+        <h1>This is 'Movie' component.</h1>
+      </div>
     );
   }
 }
