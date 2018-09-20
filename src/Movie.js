@@ -9,4 +9,12 @@ class Movie extends Component {
   }
 }
 
+class MoviePoster extends Component {
+  render() {
+    return (
+      <img src="https://images-na.ssl-images-amazon.com/images/I/41a37t9BwTL.jpg" />
+    );
+  }
+}
+
 export default Movie;
