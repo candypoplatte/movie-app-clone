@@ -31,7 +31,13 @@ class App extends Component {
   componentDidMount() {
     setTimeout(() => { 
       this.setState({
-        greeting: "hello again"
+        movies: [
+          {
+            "title": "hulk",
+            "poster": "http://imgc.allpostersimages.com/img/posters/the-hulk_u-L-F3NEM90.jpg"
+          },
+          ...this.state.movies
+        ]
       })
     }, 5000)
   }
