@@ -10,37 +10,26 @@ class App extends Component {
   state = {}
 
   componentDidMount() {
-    setTimeout(() => { 
-      this.setState({
-        movies: [
-          {
-            "title": "God Father",
-            "poster": "https://images-na.ssl-images-amazon.com/images/I/41a37t9BwTL.jpg"
-          },
-          {
-            "title": "Superman",
-            "poster": "https://i.ebayimg.com/00/s/NTAwWDMzOA==/z/7WQAAMXQ74JTWIJr/$_35.JPG?set_id=2"
-          },
-          {
-            "title": "Batman",
-            "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk8Q7FkVG4FCT-fsxJwTLYImZc4bUGrvMmDgKFpNBbhUm-oesU"
-          },
-          {
-            "title": "Ironman",
-            "poster": "https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/2/25/Iron_Man_poster_3.png/revision/latest?cb=20120420114513"
-          },
-          {
-            "title": "hulk",
-            "poster": "http://imgc.allpostersimages.com/img/posters/the-hulk_u-L-F3NEM90.jpg"
-          }
-        ]
-      })
-    }, 5000)
+    this._getMovies();
+  }
+
+  _getMovies = async () => { 
+    const movies = await this._callAPI()
+    this.setState({
+      movies // movies : movies 와 같다.
+    })
+  }
+
+  _callAPI = () => { 
+    return fetch("https://yts.am/api/v2/list_movies.json?sort_by=rating")
+      .then(response => response.json())
+      .then(json => json.data.movies)
+      .catch(err => console.log(err))
   }
 
   _renderMovies = () => { 
     const movies = this.state.movies.map((movie, index) => {
-      return <Movie title={movie.title} poster={movie.poster} key={index} />
+      return <Movie title={movie.title} poster={movie.large_cover_image} key={index} />
     })
     return movies
   }
