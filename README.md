@@ -7,4 +7,6 @@ React를 활용하여 [Movie App](https://dribbble.com/shots/2442798-Movie-Appli
 
 ## 결과
 
-[Link](https://candypoplatte.github.io/movie-app-clone/)
+https://candypoplatte.github.io/movie-app-clone/
+
+<img src="https://raw.githubusercontent.com/candypoplatte/movie-app-clone/master/output/output.png" width="200">
