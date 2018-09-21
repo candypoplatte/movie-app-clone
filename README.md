@@ -4,3 +4,7 @@
 
 영화 앱 클론(Clone) 코딩 프로젝트  
 React를 활용하여 [Movie App](https://dribbble.com/shots/2442798-Movie-Application/attachments/475341)을 그대로 구현해보는 프로젝트입니다.
+
+## 결과
+
+[Link](https://candypoplatte.github.io/movie-app-clone/)
